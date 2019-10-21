@@ -249,6 +249,14 @@ $status-default-colors-map: (
     background:                 shade($red, 500),
     color:                      $white
   ),
+  status-4: (
+    background:                 shade($orange, 500),
+    color:                      $white
+  ),
+  status-11: (
+    background:                 shade($purple, 500),
+    color:                      $white
+  ),
 ) !default;
 $status-custom-colors-map:      () !default;
 $status-colors-map:             map-merge($status-default-colors-map, $status-custom-colors-map);
