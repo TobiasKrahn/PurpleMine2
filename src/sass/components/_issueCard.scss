@@ -1,0 +1,16 @@
+.issue-card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  .fields > p.name {
+    font-weight: 600;
+  }
+  @each $tracker-id, $tracker-colors in $tracker-colors-map {
+    &.issue-tracker-#{$tracker-id} {
+      border-left: 3px solid map-get($tracker-colors, background);
+    }
+  }
+  
+}
+
+
