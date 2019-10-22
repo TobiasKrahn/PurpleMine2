@@ -2,9 +2,9 @@
   background-color: white !important;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  cursor: grab;
+  cursor: grab !important;
   &:active {
-    cursor: grabbing;
+    cursor: grabbing !important;
   }
   .fields > p.name {
     font-weight: 600;
