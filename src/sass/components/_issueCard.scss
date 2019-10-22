@@ -6,15 +6,18 @@
   &:active {
     cursor: grabbing !important;
   }
-  .fields > p.name {
-    font-weight: 600;
+  .fields {
+    > p.name {
+      font-weight: 600;
+    }
+    > .info {
+      border-top: none !important;
+      margin-top: 0 !important;
+    }
   }
   @each $tracker-id, $tracker-colors in $tracker-colors-map {
     &.issue-tracker-#{$tracker-id} {
       border-left: 5px solid map-get($tracker-colors, background);
     }
   }
-  
 }
-
-
