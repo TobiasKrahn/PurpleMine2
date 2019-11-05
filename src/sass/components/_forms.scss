@@ -565,6 +565,12 @@ label[for="closed"] {
     padding-left: .2em;
     text-align: right;
   }
+
+  // same font and padding for edit/preview
+  .wiki-edit {
+    font-family: $font-family-sans-serif;
+    padding: 15px 15px;
+  }
 }
 
 
