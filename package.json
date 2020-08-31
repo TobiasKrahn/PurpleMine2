@@ -20,34 +20,32 @@
   "scripts": {
     "build": "grunt",
     "watch": "grunt watch",
-    "lint:js": "standard",
+    "lint:js": "eslint src/javascripts/",
     "lint:sass": "stylelint src/sass/**/*.scss",
     "lint": "npm run -S lint:js && npm run -S lint:sass"
   },
   "dependencies": {
-    "autoprefixer": "^9.6.1",
-    "grunt": "^1.0.4",
-    "grunt-contrib-uglify": "^4.0.1",
+    "autoprefixer": "^9.8.6",
+    "grunt": "^1.2.1",
+    "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^3.0.2",
-    "node-sass": "^4.12.0",
-    "sass-inline-svg": "^1.2.0"
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "sass-inline-svg": "^1.2.3"
   },
   "devDependencies": {
-    "standard": "^13.1.0",
-    "stylelint": "^10.1.0",
-    "stylelint-order": "^3.0.1",
-    "stylelint-scss": "^3.9.3"
-  },
-  "standard": {
-    "globals": [
-      "$",
-      "localStorage"
-    ],
-    "ignore": [
-      "/javascripts"
-    ]
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "stylelint": "^13.6.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
   },
   "browserslist": [
     "last 2 versions",
