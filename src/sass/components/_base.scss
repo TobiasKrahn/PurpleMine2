@@ -188,7 +188,10 @@ blockquote {
 }
 
 @each $key in map-keys($agileColors) {
-  [data-color="#{$key}"], .bk-#{$key}, .simplecolorpicker[title=#{$key}] {
+  [data-color="#{$key}"], .simplecolorpicker[title=#{$key}] {
     background-color: map-get($agileColors, $key);
+  }
+  .agile-board .issue-card.bk-#{$key} {
+    border-color: map-get($agileColors, $key);
   }
 }
