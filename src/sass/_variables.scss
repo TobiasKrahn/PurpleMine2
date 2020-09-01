@@ -862,3 +862,16 @@ $agile-issue-card-default-color-map: (
 ) !default;
 $agile-issue-card-custom-color-map: () !default;
 $agile-issue-card-color-map:    map-merge($agile-issue-card-default-color-map, $agile-issue-card-custom-color-map);
+
+$agileColors: (
+  nmc_blue_t2: $blue, 
+  nmc_indigo_t7: $indigo, 
+  nmc_purple_t4: $purple, 
+  nmc_pink: $pink,
+  nmc_red_t1: $red,
+  nmc_orange_t5: $orange,
+  nmc_yellow: $yellow,
+  nmc_green_t3: $green,
+  nmc_teal_t6: $teal,
+);
+
